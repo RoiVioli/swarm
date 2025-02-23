@@ -71,7 +71,8 @@ docker swarm leave --force
 
 ```bash
 tar -czvf /tmp/swarm-backup.tar.gz /var/lib/docker/swarm
-curl --upload-file /tmp/swarm-backup.tar.gz https://transfer.sh/swarm-backup.tar.gz
+curl -F "file=@/tmp/swarm-backup.tar.gz" https://0x0.st
+
 ```
 
 ```bash
